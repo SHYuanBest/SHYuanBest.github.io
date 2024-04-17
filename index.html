@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Shenghai Yuan - Homepage</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="description" content="Shenghai Yuan's homepage" />
+    <link rel="icon" href="media/sleep.svg" />
+    <style type="text/css">
+      @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap);
+      html {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        max-width: 100%;
+        height: 100%;
+      }
+      body {
+        padding: 0;
+        margin: 0 auto;
+        max-width: 800px;
+        min-width: 375px;
+      }
+      a {
+        text-decoration: none;
+        color: #1772d0;
+        cursor: pointer;
+      }
+      a:hover {
+        color: #f09228;
+      }
+      strong {
+        font-weight: 400;
+      }
+      header {
+        font-size: 15px;
+        min-height: 273px;
+        padding: 20px;
+        margin: 8px 20px;
+        padding-right: 220px;
+        position: relative;
+      }
+      header > picture {
+        position: absolute;
+        width: 200px;
+        height: 273px;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+      @media (max-width: 540px) {
+        header {
+          padding-right: 0;
+        }
+        header > picture {
+          position: static;
+          display: block;
+          margin: auto;
+        }
+      }
+      .self-intro-name {
+        padding: 14px 0;
+        text-align: center;
+        font-weight: 400;
+        font-size: 32px;
+      }
+      .self-intro-links {
+        text-align: center;
+      }
+      h1 {
+        font-size: 24px;
+        padding: 20px;
+        margin: 0;
+        font-weight: 400;
+      }
+      .award-heading {
+          margin-bottom: 10px;
+          padding: 20px;
+          font-weight: 400;
+      }
+      .award ul {
+          margin-top: 0;
+      }
+      .publication {
+        padding: 20px;
+        font-size: 15px;
+      }
+      .publication p {
+        margin: 0;
+      }
+      .publication > picture {
+        float: left;
+        object-fit: contain;
+        margin-right: 20px;
+        overflow: hidden;
+      }
+      .publication > picture > img {
+        transition: transform ease-in-out .3s;
+      }
+      .publication > picture > img:hover {
+        transform: scale(1.1);
+      }
+      .publication .title {
+        font-weight: 500;
+        margin-bottom: 5px;
+      }
+      .publication .authors {
+        margin-bottom: 5px;
+      }
+      .publication .venue {
+        margin-bottom: 5px;
+      }
+      .publication .links {
+        margin-bottom: 5px;
+      }
+      .publication .link::before {
+        content: "[";
+      }
+      .publication .link::after {
+        content: "]";
+      }
+      .publication .link {
+        margin-right: 3px;
+      }
+      .publication .desc {
+        margin-top: 14px;
+        font-size: 14px;
+      }
+      footer {
+        text-align: right;
+        padding: 20px;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="self-intro-name">Shenghai Yuan (袁盛海)</div>
+      <picture>
+        <!-- <source srcset="/media/IDPhoto.avif" type="image/avif" /> -->
+        <img width="170" height="228" src="media/profile.jpg" alt="ID Photo" />
+      </picture>
+      <div>
+        <p>
+          I am a master candidate of computer applications technology at 
+          <a href="https://www.ece.pku.edu.cn/">School of Electron and Computer Engineering</a>, 
+          <a href="https://www.pku.edu.cn/">Peking University</a>, advised by Prof. 
+          <a href="https://yuanli2333.github.io/">Li Yuan</a>. 
+          In the future, I will receive my B. Eng in 
+          <a href="https://cs.gdut.edu.cn/">School of Computer Science and Technology</a>, 
+          <a href="https://www.gdut.edu.cn/">Guangdong University of Technology</a>.
+        </p>
+        <p>
+          My research interests include but are not limited to <strong>Video Generation</strong> and <strong>Multimodal Large Language Models</strong>.
+        </p>
+        <div class="self-intro-links">
+          <a href="mailto:shyuan-cs@hotmail.com">Email</a>
+          &nbsp;|&nbsp;
+          <a href="https://shyuanbest.github.io/shenghaiyuan/">Google Scholar</a>
+          &nbsp;|&nbsp;
+          <a href="https://github.com/SHYuanBest">GitHub</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <h1>Selected Publications</h1>
+      <div class="publication">
+        <picture>
+          <img src="media/magictime_logo.png" width="150" height="150" alt="MagicTime: Time-lapse Video Generation Models as Metamorphic Simulators" />
+        </picture>
+        <div>
+          <p class="title">MagicTime: Time-lapse Video Generation Models as Metamorphic Simulators</p>
+          <div class="authors">
+            <strong>Shenghai Yuan</strong><sup>*</sup>,</span>
+            <a href="https://infaaa.github.io/">Jinfa Huang</a><sup>*</sup>,</span>
+            <a href="https://yujun-shi.github.io/">Yujun Shi</a>,</span>
+            <a href="https://shyuanbest.github.io/shenghaiyuan/">Yongqi Xu</a>,</span>
+            <a href="https://ruijie-zhu.github.io/">Ruijie Zhu</a>,</span>
+            <a href="https://twitter.com/LinBin46984">Bin Lin</a>,</span>
+            <a href="https://cxh0519.github.io/">Xinhua Cheng</a>,</span>
+            <a href="https://yuanli2333.github.io/">Li Yuan</a>,</span>
+            <a href="https://www.cs.rochester.edu/u/jluo/">Jiebo Luo</a></span>
+          </div>
+          <p class="venue">Arxiv, 2024</p>
+          <div class="links">
+            <span class="link"><a href="https://arxiv.org/abs/2404.05014">Paper</a></span>
+            <span class="link"><a href="https://github.com/PKU-YuanGroup/MagicTime">Code</a></span>
+            <span class="link"><a href="https://pku-yuangroup.github.io/MagicTime/">Page</a></span>
+            <span class="link"><a href="https://drive.google.com/drive/folders/1WsomdkmSp3ql3ImcNsmzFuSQ9Qukuyr8">Dataset</a></span>
+          </div>
+          <p class="desc">
+            We are thrilled to present MagicTime, a metamorphic time-lapse video generation model and a new dataset ChronoMagic, support U-Net or DiT-based T2V frameworks.
+          </p>
+        </div>
+      </div>
+      
+      <div class="publication">
+        <picture>
+          <img src="media/LHNetV2_logo_2.png" width="150" height="145 " alt="LHNetV2: A Balanced Low-cost Hybrid Network for Single Image Dehazing" />
+        </picture>
+        <div>
+          <p class="title">LHNetV2: A Balanced Low-cost Hybrid Network for Single Image Dehazing</p>
+          <div class="authors">
+            <strong>Shenghai Yuan</strong>,</span>
+            <a href="https://shyuanbest.github.io/shenghaiyuan/">Jijia Chen</a>,</span>
+            <a href="https://cps.gdut.edu.cn/kytd/ryjs.htm">Wenchao Jiang</a>,</span>
+            <a href="https://staff.fnwi.uva.nl/z.zhao/">Zhiming Zhao</a></span>
+            <a href="https://hkpeilab.github.io/people/">Song Guo</a></span>
+          </div>
+          <p class="venue">IEEE Transactions on Multimedia <strong>(TMM)</strong>, 2024</p>
+          <div class="links">
+            <span class="link"><a href="https://ieeexplore.ieee.org/document/10472132">Paper</a></span>
+            <span class="link"><a href="https://github.com/SHYuanBest/LHNet">Code</a></span>
+          </div>
+          <p class="desc">
+            We introduce LHNetV2, an advanced version of LHNet that combines various dehazing features more efficiently while enhancing running speed.
+          </p>
+        </div>
+      </div>
+
+      <div class="publication">
+        <picture>
+          <img src="media/LHNet_logo.png" width="150" height="150 " alt="LHNet: A Low-cost Hybrid Network for Single Image Dehazing" />
+        </picture>
+        <div>
+          <p class="title">LHNet: A Low-cost Hybrid Network for Single Image Dehazing</p>
+          <div class="authors">
+            <strong>Shenghai Yuan</strong>,</span>
+            <a href="https://shyuanbest.github.io/shenghaiyuan/">Jijia Chen</a>,</span>
+            <a href="https://shyuanbest.github.io/shenghaiyuan/">Jiaqi Li</a>,</span>
+            <a href="https://cps.gdut.edu.cn/kytd/ryjs.htm">Wenchao Jiang</a>,</span>
+            <a href="https://hkpeilab.github.io/people/">Song Guo</a></span>
+          </div>
+          <p class="venue">ACM International Conference on Multimedia <strong>(ACM MM)</strong>, 2023</p>
+          <div class="links">
+            <span class="link"><a href="https://dl.acm.org/doi/abs/10.1145/3581783.3612594">Paper</a></span>
+            <span class="link"><a href="https://github.com/SHYuanBest/LHNet">Code</a></span>
+          </div>
+          <p class="desc">
+            We propose LHNet, a Low-cost Hybrid Network that effectively merges various features for single image dehazing.
+          </p>
+        </div>
+      </div>
+
+    </main>
+
+    <h1 id="award-heading">Awards</h1>
+    <div class="award">
+        <ul>
+            <li><em>National Scholarship Award, PRC (2021)</em></li>
+            <li><em>National Scholarship Award, PRC (2022)</em></li>
+            <li><em>National Scholarship Award, PRC (2023)</em></li>
+        </ul>
+    </div>
+
+  
+    <footer>
+      Last updated: Apr 2024
+    </footer>
+  </body>
+</html>
